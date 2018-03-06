@@ -1,5 +1,5 @@
 {
-  "name": "idexToCoinTracking",
+  "name": "idextocointracking",
   "version": "1.0.0",
   "description": "Converts Idex trade list to coin tracking compatible format",
   "main": "index.js",
