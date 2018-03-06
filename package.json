@@ -1,0 +1,28 @@
+{
+  "name": "idexToCoinTracking",
+  "version": "1.0.0",
+  "description": "Converts Idex trade list to coin tracking compatible format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/sbuljac/idexToCoinTracking"
+  },
+  "bin": {
+    "fbtoxero": "./index.js"
+  },
+  "keywords": [
+    "coin tracking",
+    "idex",
+    "csv"
+  ],
+  "dependencies": {
+    "csv": "^1.1.1",
+    "moment": "^2.19.0",
+    "optimist": "^0.6.1"
+  }
+}
