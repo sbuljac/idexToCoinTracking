@@ -1,6 +1,6 @@
 {
   "name": "idextocointracking",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts Idex trade list to coin tracking compatible format",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "url" : "https://github.com/sbuljac/idexToCoinTracking"
   },
   "bin": {
-    "fbtoxero": "./index.js"
+    "idextocointracking": "./index.js"
   },
   "keywords": [
     "coin tracking",
