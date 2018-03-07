@@ -8,9 +8,9 @@
   },
   "author": "",
   "license": "MIT",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/sbuljac/idexToCoinTracking"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sbuljac/idexToCoinTracking"
   },
   "bin": {
     "idextocointracking": "./index.js"
@@ -23,6 +23,7 @@
   "dependencies": {
     "csv": "^1.1.1",
     "moment": "^2.19.0",
-    "optimist": "^0.6.1"
+    "optimist": "^0.6.1",
+    "standard": "^11.0.0"
   }
 }
