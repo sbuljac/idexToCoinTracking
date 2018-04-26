@@ -7,8 +7,15 @@ fs.createReadStream(argv._[0])
   .pipe(csv.parse({columns: true, relax_column_count: true, delimiter: '\t'}))
   .pipe(csv.transform((record) => {
     let [Fee] = record.Fee.split(' ')
-    const [GFee] = record['Gas Fee'].split(' ')
-    Fee = Number(Fee) + Number(GFee)
+    let [GFee] = record['Gas Fee'].split(' ')
+    GFee = Number(GFee)
+    Fee = Number(Fee)
+    if (Number.isNaN(Fee)) {
+      Fee = 0
+    }
+    if (!Number.isNaN(GFee)) {
+      Fee += GFee
+    }
 
     let Buy, CurB, Sell, CurS
     if (record.Type === 'Buy') {
